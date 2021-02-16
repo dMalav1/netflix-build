@@ -9,15 +9,12 @@ const firebaseConfig = {
   storageBucket: "netflix-clone-c7d4e.appspot.com",
   messagingSenderId: "320512517990",
   appId: "1:320512517990:web:4736a58bca0f73a22f4aa7",
-  measurementId: "G-CN08WFVT05"
+  measurementId: "G-CN08WFVT05",
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
-const auth= firebase.auth();
+const auth = firebase.auth();
 
-export{auth};  //can be many
+export { auth }; //can be many
 export default db; //export default  should be one
-
-
-

@@ -24,7 +24,7 @@ background-color: black;
     position: fixed;
     top: 10px;
     left: 0;
-    width: 80px;
+    width: 100px;
     object-fit: contain;
     padding-left: 20px;
     cursor: pointer;
@@ -32,9 +32,10 @@ background-color: black;
 
 .nav__avatar{
     position: fixed;
-    right: 20px;
-    width: 30px;
-    height: 30px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+    top: 18px;
 }
 

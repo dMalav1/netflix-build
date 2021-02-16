@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { auth } from "../firebase";
 
 function ProfileScreen() {
-    const user = useSelector(selectUser);
+  const user = useSelector(selectUser);
 
   return (
     <div className="profileScreen">
@@ -19,12 +19,16 @@ function ProfileScreen() {
             alt=""
           />
           <div className="profileScreen__details">
-<h2>{user.email}</h2> 
-<div className="profileScreen__plans">
-  <h3>Plans</h3>
-    <button onClick={()=>auth.signOut()} 
-    className="profileScreen__signOut">Sign Out</button>
-</div>
+            <h2>{user.email}</h2>
+            <div className="profileScreen__plans">
+              <h3>Plans</h3>
+              <button
+                onClick={() => auth.signOut()}
+                className="profileScreen__signOut"
+              >
+                Sign Out
+              </button>
+            </div>
           </div>
         </div>
       </div>
